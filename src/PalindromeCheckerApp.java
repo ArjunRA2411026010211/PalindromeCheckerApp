@@ -10,11 +10,11 @@ public class PalindromeCheckerApp {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a word: ");
+        System.out.print("Enter a word or sentence: ");
         String word = sc.nextLine();
 
-        // Convert to lowercase to ignore case sensitivity
-        word = word.toLowerCase();
+        // remove spaces and convert to lowercase
+        word = word.replaceAll(" ", "").toLowerCase();
 
         String reverse = "";
 
