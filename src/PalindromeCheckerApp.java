@@ -13,6 +13,9 @@ public class PalindromeCheckerApp {
         System.out.print("Enter a word: ");
         String word = sc.nextLine();
 
+        // Convert to lowercase to ignore case sensitivity
+        word = word.toLowerCase();
+
         String reverse = "";
 
         for(int i = word.length() - 1; i >= 0; i--) {
@@ -20,9 +23,9 @@ public class PalindromeCheckerApp {
         }
 
         if(word.equals(reverse)) {
-            System.out.println(word + " is a Palindrome");
+            System.out.println("It is a Palindrome");
         } else {
-            System.out.println(word + " is NOT a Palindrome");
+            System.out.println("It is NOT a Palindrome");
         }
 
         sc.close();
